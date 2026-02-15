@@ -8,3 +8,39 @@
   <p>Deployed using GitHub Actions</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitOps Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #020617;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>GitOps Demo 🚀</h1>
+    <p>Deployed automatically using GitHub Actions</p>
+    <p><strong>Version:</strong> v1.2</p>
+    <p><strong>Last Updated:</strong> <span id="time"></span></p>
+  </div>
+
+  <script>
+    document.getElementById("time").innerText = new Date().toLocaleString();
+  </script>
+</body>
+</html>
